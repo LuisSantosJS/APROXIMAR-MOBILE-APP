@@ -19,10 +19,10 @@ const Wellcome: React.FC = () => {
                     </View>
                     <View style={styles.metade}>
                         <Text style={styles.text}>Meu perfil é...</Text>
-                        <RectButton onPress={() => navigation.navigate('LoginEmpresa')} style={styles.buttons}>
+                        <RectButton onPress={() => navigation.navigate('LoginCandidato')} style={styles.buttons}>
                             <Text style={[styles.textButton, { color: '#8BECDA' }]}>EMPRESA</Text>
                         </RectButton>
-                        <RectButton onPress={() => navigation.navigate('LoginCandidato')} style={styles.buttons}>
+                        <RectButton onPress={() => navigation.navigate('LoginEmpresa')} style={styles.buttons}>
                             <Text style={[styles.textButton, { color: '#3A0E63', fontWeight: '600' }]}>CANDIDATE</Text>
                         </RectButton>
                         <TouchableOpacity activeOpacity={0.7}>

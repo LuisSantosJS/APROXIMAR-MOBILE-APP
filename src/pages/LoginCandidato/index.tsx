@@ -34,7 +34,7 @@ const LoginCandidato: React.FC = () => {
                     <TextInput placeholder={'E-mail'} placeholderTextColor='white' style={styles.input} />
                     <TextInput placeholder={'Senha'} placeholderTextColor='white' style={styles.input} />
                     <View style={{padding: 15}}/>
-                    <RectButton style={styles.submit}>
+                    <RectButton onPress={onLogin} style={styles.submit}>
                         <Text style={styles.textSubmit}>LOGIN</Text>
                     </RectButton>
                 </ImageBackground>
