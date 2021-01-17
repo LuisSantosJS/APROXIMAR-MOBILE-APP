@@ -1,9 +1,10 @@
 import React from 'react';
-import { ImageBackground, Text, View, ScrollView, StyleSheet } from 'react-native';
+import { ImageBackground, Text, View, ScrollView, StyleSheet, Touchable } from 'react-native';
 import styles from './styles'
 //@ts-ignore
 import HeadeImage from '../../assets/header.png'
-const HomeCandidato: React.FC = () => {
+import { TouchableOpacity } from 'react-native-gesture-handler';
+const HomeCandidato: React.FC<any> = ({ navigation }) => {
     return (
         <>
             <ScrollView>
@@ -14,7 +15,9 @@ const HomeCandidato: React.FC = () => {
                             <Text style={styles.pontos}>Pontos 999999</Text>
                         </View>
                         <View style={[styles.colums, { justifyContent: 'flex-end' }]}>
-                            <Text style={styles.ted}>Meu Perfil</Text>
+                            <TouchableOpacity onPress={() => navigation.navigate('Perfil')} activeOpacity={0.7}>
+                                <Text style={styles.ted}>Meu Perfil</Text>
+                            </TouchableOpacity>
                         </View>
                     </ImageBackground>
                     <Text style={styles.cutos}>CURSOS A ADQUIRIR</Text>
@@ -51,11 +54,11 @@ const HomeCandidato: React.FC = () => {
                         <Text style={{ color: '#707070', width: '80%' }}>Clique aqui para redirecionar à plataforma do curso</Text>
                     </View>
                     <View style={styles.cursorow}>
-                    <Text style={styles.oratoria}>INGLÊS</Text>
+                        <Text style={styles.oratoria}>INGLÊS</Text>
                         <Text style={{ color: '#707070', width: '80%' }}>Clique aqui para redirecionar à plataforma do curso</Text>
                     </View>
                     <View style={styles.cursorow}>
-                    <Text style={styles.oratoria}>ESPANHOL</Text>
+                        <Text style={styles.oratoria}>ESPANHOL</Text>
                         <Text style={{ color: '#707070', width: '80%' }}>Clique aqui para redirecionar à plataforma do curso</Text>
                     </View>
 
