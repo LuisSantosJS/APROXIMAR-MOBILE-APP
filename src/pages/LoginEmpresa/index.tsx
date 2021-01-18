@@ -32,7 +32,7 @@ const LoginEmpresa: React.FC = () => {
                     <Text style={styles.textBem}>BEM VINDE</Text>
                     <View style={{ padding: 5 }} />
                     <TextInput placeholder={'E-mail'} placeholderTextColor='white' style={styles.input} />
-                    <TextInput placeholder={'Senha'} placeholderTextColor='white' style={styles.input} />
+                    <TextInput placeholder={'Senha'} placeholderTextColor='white' secureTextEntry={true} style={styles.input} />
                     <View style={{ padding: 15 }} />
                     <RectButton onPress={onLogin} style={styles.submit}>
                         <Text style={styles.textSubmit}>LOGIN</Text>

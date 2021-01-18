@@ -12,7 +12,7 @@ const HomeCandidato: React.FC<any> = ({ navigation }) => {
                     <ImageBackground style={styles.header} resizeMode='cover' imageStyle={{ height: '100%' }} source={HeadeImage}>
                         <View style={styles.colums}>
                             <View style={styles.avatar} />
-                            <Text style={styles.pontos}>Pontos 999999</Text>
+                            <Text style={styles.pontos}>Pontos 3100</Text>
                         </View>
                         <View style={[styles.colums, { justifyContent: 'flex-end' }]}>
                             <TouchableOpacity onPress={() => navigation.navigate('Perfil')} activeOpacity={0.7}>
@@ -20,45 +20,33 @@ const HomeCandidato: React.FC<any> = ({ navigation }) => {
                             </TouchableOpacity>
                         </View>
                     </ImageBackground>
-                    <Text style={styles.cutos}>CURSOS A ADQUIRIR</Text>
+                    <Text style={styles.cutos}>CURSOS RECOMENDADOS</Text>
                     <ScrollView showsHorizontalScrollIndicator={false} style={styles.scrol} horizontal>
                         <View style={{ padding: 15 }} />
                         <View style={styles.item}>
-                            <Text style={styles.nome}>Nome do Curso</Text>
+                            <Text style={styles.nome}>Oratória</Text>
                         </View>
                         <View style={{ padding: 15 }} />
                         <View style={styles.item}>
-                            <Text style={styles.nome}>Nome do Curso</Text>
+                            <Text style={styles.nome}>Inglês</Text>
                         </View>
                         <View style={{ padding: 15 }} />
                         <View style={styles.item}>
-                            <Text style={styles.nome}>Nome do Curso</Text>
-                        </View>
-                        <View style={{ padding: 15 }} />
-                        <View style={styles.item}>
-                            <Text style={styles.nome}>Nome do Curso</Text>
-                        </View>
-                        <View style={{ padding: 15 }} />
-                        <View style={styles.item}>
-                            <Text style={styles.nome}>Nome do Curso</Text>
-                        </View>
-                        <View style={{ padding: 15 }} />
-                        <View style={styles.item}>
-                            <Text style={styles.nome}>Nome do Curso</Text>
+                            <Text style={styles.nome}>Marketing</Text>
                         </View>
                         <View style={{ padding: 15 }} />
                     </ScrollView>
-                    <Text style={styles.cutos}>CURSOS ADQUIRIDOS</Text>
+                    <Text style={styles.cutos}>CURSOS FINALIZADOS</Text>
                     <View style={[styles.cursorow, { borderTopLeftRadius: 20, borderTopRightRadius: 20 }]}>
-                        <Text style={styles.oratoria}>ORATÓRIA</Text>
+                        <Text style={styles.oratoria}>RELAÇÃO INTERPESSOAL</Text>
                         <Text style={{ color: '#707070', width: '80%' }}>Clique aqui para redirecionar à plataforma do curso</Text>
                     </View>
                     <View style={styles.cursorow}>
-                        <Text style={styles.oratoria}>INGLÊS</Text>
+                        <Text style={styles.oratoria}>INGLÊS AVANÇADO</Text>
                         <Text style={{ color: '#707070', width: '80%' }}>Clique aqui para redirecionar à plataforma do curso</Text>
                     </View>
                     <View style={styles.cursorow}>
-                        <Text style={styles.oratoria}>ESPANHOL</Text>
+                        <Text style={styles.oratoria}>ESPANHOL BÁSICO</Text>
                         <Text style={{ color: '#707070', width: '80%' }}>Clique aqui para redirecionar à plataforma do curso</Text>
                     </View>
 
